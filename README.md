@@ -3,7 +3,7 @@
 Node\
 Angular CLI\
 Eslint Extension\
-Prettier Extension installed, enabled local config detection.\
+Prettier Extension installed, enabled local config detection.
 
 ## First Time
 
