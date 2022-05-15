@@ -5,9 +5,17 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+//Modules
+import { PomodoroModule } from './pages/pomodoro/pomodoro.module'
+
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        PomodoroModule,
+    ],
     providers: [],
     bootstrap: [AppComponent],
 })
