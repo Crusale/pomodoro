@@ -1,4 +1,4 @@
-# Project Requirments
+# Project Requirements
 
 Node\
 Angular CLI\
