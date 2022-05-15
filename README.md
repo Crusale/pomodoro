@@ -10,4 +10,4 @@ Prettier Extension installed, enabled local config detection.\
 Run project locally:
 
 > npm install\
-> ng serve\
+> ng serve
