@@ -1,0 +1,21 @@
+{
+    "functions": {
+        "source": "functions"
+    },
+    "hosting": {
+        "public": "functions",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [
+            {
+                "source": "**",
+                "function": "ngssr"
+            }
+        ]
+    },
+    "emulators": {
+        "hosting": {
+            "host": "localhost",
+            "port": "9999"
+        }
+    }
+}

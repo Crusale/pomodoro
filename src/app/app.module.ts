@@ -11,7 +11,7 @@ import { PomodoroModule } from './pages/pomodoro/pomodoro.module'
 @NgModule({
     declarations: [AppComponent],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({ appId: 'serverApp' }),
         AppRoutingModule,
         BrowserAnimationsModule,
         PomodoroModule,
