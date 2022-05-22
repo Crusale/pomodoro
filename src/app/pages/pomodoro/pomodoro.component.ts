@@ -6,5 +6,5 @@ import { Component } from '@angular/core'
     styleUrls: ['./pomodoro.component.scss'],
 })
 export class PomodoroComponent {
-    pomodoro: string = 'pomodoro component'
+    pomodoro: string = 'Some day this will be a beautiful web app, at least 🤪'
 }
