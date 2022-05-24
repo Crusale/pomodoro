@@ -8,7 +8,13 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "lint": "ng lint",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "dev:ssr": "ng run pomodoro:serve-ssr",
+        "serve:ssr": "node dist/pomodoro/server/main.js",
+        "build:ssr": "ng build && ng run pomodoro:server",
+        "prerender": "ng run pomodoro:prerender",
+        "build:functions": "npm run --prefix functions build",
+        "build:all": "npm run build:ssr && cd functions/ && npm run build"
     },
     "private": true,
     "dependencies": {
@@ -21,7 +27,10 @@
         "@angular/material": "^13.3.7",
         "@angular/platform-browser": "~13.3.0",
         "@angular/platform-browser-dynamic": "~13.3.0",
+        "@angular/platform-server": "~13.3.0",
         "@angular/router": "~13.3.0",
+        "@nguniversal/express-engine": "^13.1.1",
+        "express": "^4.15.2",
         "rxjs": "~7.5.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.11.4"
@@ -35,6 +44,8 @@
         "@angular-eslint/template-parser": "13.2.1",
         "@angular/cli": "~13.3.2",
         "@angular/compiler-cli": "~13.3.0",
+        "@nguniversal/builders": "^13.1.1",
+        "@types/express": "^4.17.0",
         "@types/jasmine": "~3.10.0",
         "@types/node": "^12.11.1",
         "@typescript-eslint/eslint-plugin": "5.17.0",
