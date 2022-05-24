@@ -13,7 +13,7 @@ export function app(): express.Express {
     const server = express()
     const appFilesLocations = process.env['production']
         ? 'browser'
-        : 'lib/dist/browser'
+        : 'functions/lib/dist/browser'
     const distFolder = join(process.cwd(), appFilesLocations)
     const indexHtml = existsSync(join(distFolder, 'index.original.html'))
         ? 'index.original.html'
