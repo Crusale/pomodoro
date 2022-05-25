@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "pomodoro-ssr-2892c"
-  }
+    "production": "pomodoro-ssr-2892c",
+    "development": "pomodoro-ssr-dev"
+  },
+  "targets": {}
 }
