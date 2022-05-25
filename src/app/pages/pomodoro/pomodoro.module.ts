@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core'
-import { PomodoroComponent } from './pomodoro.component'
+import { NgModule } from '@angular/core';
+import { PomodoroComponent } from './pomodoro.component';
 
 @NgModule({
-    declarations: [PomodoroComponent],
-    exports: [PomodoroComponent],
+  declarations: [PomodoroComponent],
+  exports: [PomodoroComponent]
 })
 export class PomodoroModule {}
