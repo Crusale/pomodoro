@@ -1,7 +1,7 @@
 {
   "name": "functions",
   "scripts": {
-    "build": "tsc && rm -rf ./lib/dist && scp -r ../dist/pomodoro ./lib/dist",
+    "build": "tsc && rm -rf ./lib/dist && cp -r ../dist/pomodoro ./lib/dist",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
